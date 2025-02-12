@@ -39,3 +39,28 @@ const styles = StyleSheet.create({
   },
 });
 export default Weather; */
+
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
+
+const Weather = ({ city, weather, style }) => {
+  return (
+    <View style={style}>
+      <Text style={styles.blue}>{city}</Text>
+      <Text style={styles.red}>{weather}</Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  blue: {
+    color: "blue",
+    fontWeight: "bold",
+    fontSize: 30,
+  },
+  red: {
+    color: "red",
+  },
+});
+
+export default Weather;
