@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 /// ACTIVITY 7
 ///////////////////////////////
 
-import { View, StyleSheet } from "react-native";
+/* import { View, StyleSheet } from "react-native";
 import Weather from "./components/Weather";
 
 export default function App() {
@@ -31,6 +31,31 @@ export default function App() {
     <View style={styles.f}>
       <Weather style={styles.f} city="London" weather="Sunny" />
       <Weather style={styles.f} city="Bristol" weather="Rainy" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  f: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+}); */
+
+/// ACTIVITY 9
+///////////////////////////////
+
+import { View, StyleSheet } from "react-native";
+import Weather from "./components/Weather";
+import City from "./components/City";
+
+export default function App() {
+  return (
+    <View style={styles.f}>
+      <Weather style={styles.f} city="London" weather="Sunny" />
+      <Weather style={styles.f} city="Bristol" weather="Rainy" />
+      <City />
     </View>
   );
 }
