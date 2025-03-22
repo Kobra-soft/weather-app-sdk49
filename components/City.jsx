@@ -34,5 +34,4 @@ const City = (props) => {
   );
 };
 
-// This makes the component available to other JavaScript modules.
 export default City;
