@@ -1,5 +1,3 @@
-// ACTIVITY 9 - City.jsx
-
 import React, { useState, useEffect } from "react";
 import { Text, View } from "react-native";
 import * as Location from "expo-location";
